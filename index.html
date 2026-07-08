@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">Instagram</div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="nav-icons">
+            <i class="fa-regular fa-bell" id="notification-btn"></i>
+            <img src="https://images.pexels.com/photos/21267056/pexels-photo-21267056.jpeg" alt="profile">
+        </div>
+
+        <!-- notification-dropdown -->
+        <div class="notification-panel" id="notification-panel">
+            <h3>Notifications</h3>
+
+            <div class="notification">❤️ Ryan liked your post</div>
+            <div class="notification">💬 Penn commented on your post</div>
+            <div class="notification">👤 Aman started following you</div>
+            <div class="notification">🔥 Sarah mentioned you in a comment</div>
+        </div>
+
+    </header>
+
+    <!-- main layout -->
+    <div class="container">
+
+        <!-- LEFT Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li id="home-btn">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </li>
+
+                <li id="explore-btn">
+                    <i class="fa-solid fa-compass"></i>
+                    Explore
+                </li>
+
+                <li id="message-btn">
+                    <i class="fa-regular fa-message"></i>
+                    Messages
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-regular fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+
+                <li id="saved-btn">
+                    <i class="fa-regular fa-bookmark"></i>
+                    Saved
+                </li>
+
+                <li id="settings-btn">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </li>
+
+                <li id="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </li>
+            </ul>
+        </aside>
+
+        <!-- main content -->
+        <main class="main-content">
+
+            <!-- story-->
+            <section class="stories">
+                <div class="story">
+                    <img src="https://images.pexels.com/photos/21267056/pexels-photo-21267056.jpeg" alt="">
+                    <p>You</p>
+                </div>
+
+                <div class="story">
+                    <img src="https://images.pexels.com/photos/9558702/pexels-photo-9558702.jpeg" alt="">
+                    <p>Ryan</p>
+                </div>
+
+                <div class="story">
+                    <img src="https://images.pexels.com/photos/6678841/pexels-photo-6678841.jpeg" alt="">
+                    <p>Penn</p>
+                </div>
+
+                <div class="story">
+                    <img src="https://images.pexels.com/photos/33823988/pexels-photo-33823988.jpeg" alt="">
+                    <p>Aman</p>
+                </div>
+
+                <div class="story">
+                    <img src="https://images.pexels.com/photos/5025107/pexels-photo-5025107.jpeg" alt="">
+                    <p>Maya</p>
+                </div>
+
+                <div class="story">
+                    <img src="https://images.pexels.com/photos/8638704/pexels-photo-8638704.jpeg" alt="">
+                    <p>Alex</p>
+                </div>
+
+                <div class="story">
+                    <img src="https://images.pexels.com/photos/25797358/pexels-photo-25797358.jpeg" alt="">
+                    <p>Sarah</p>
+                </div>
+            </section>
+
+            <!-- feed -->
+            <section class="feed">
+
+                <!-- 1st post -->
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="https://images.pexels.com/photos/9558702/pexels-photo-9558702.jpeg" alt="Profile">
+                            <div>
+                                <h4>Ryan</h4>
+                                <p>3 hours ago</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+
+                    <div class="post-image">
+                        <img src="https://images.pexels.com/photos/8415177/pexels-photo-8415177.jpeg" alt="Post">
+                    </div>
+
+                    <div class="post-actions">
+                        <div class="left-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+
+                    <div class="likes"><strong>235 Likes</strong></div>
+                    <div class="caption"><strong>Ryan Smith</strong> ❤️❤️</div>
+                    <div class="comments">View all 25 comments</div>
+                </div>
+
+                <!-- 2nd post -->
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="https://images.pexels.com/photos/6678841/pexels-photo-6678841.jpeg" alt="Profile">
+                            <div>
+                                <h4>Penn Singers</h4>
+                                <p>1 hour ago</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+
+                    <div class="post-image">
+                        <img src="https://images.pexels.com/photos/9053132/pexels-photo-9053132.jpeg" alt="Post">
+                    </div>
+
+                    <div class="post-actions">
+                        <div class="left-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+
+                    <div class="likes"><strong>77 Likes</strong></div>
+                    <div class="caption"><strong>Penn Singers</strong> in nature 🌿🌳</div>
+                    <div class="comments">View all 15 comments</div>
+                </div>
+
+                <!-- 3rd post -->
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="https://images.pexels.com/photos/33823988/pexels-photo-33823988.jpeg" alt="Profile">
+                            <div>
+                                <h4>Aman Verma</h4>
+                                <p>35 minutes ago</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+
+                    <div class="post-image">
+                        <img src="https://images.pexels.com/photos/37667519/pexels-photo-37667519.jpeg" alt="Post">
+                    </div>
+
+                    <div class="post-actions">
+                        <div class="left-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+
+                    <div class="likes"><strong>190 Likes</strong></div>
+                    <div class="caption"><strong>Aman Verma</strong> Mr. Whiskers</div>
+                    <div class="comments">View all 47 comments</div>
+                </div>
+
+                <!-- 4th post -->
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="https://images.pexels.com/photos/25797358/pexels-photo-25797358.jpeg" alt="Profile">
+                            <div>
+                                <h4>Sarah Singh Shelly</h4>
+                                <p>5 mins ago</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+
+                    <div class="post-image">
+                        <img src="https://images.pexels.com/photos/28357674/pexels-photo-28357674.jpeg" alt="Post">
+                    </div>
+
+                    <div class="post-actions">
+                        <div class="left-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+
+                    <div class="likes"><strong>1.2k Likes</strong></div>
+                    <div class="caption"><strong>Sarah Singh Shelly</strong> peace🕊️</div>
+                    <div class="comments">View all 102 comments</div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- RIGHT Sidebar -->
+        <aside class="right-sidebar">
+
+            <!-- Profile sidebar -->
+            <div class="profile-card">
+                <img src="https://images.pexels.com/photos/21267056/pexels-photo-21267056.jpeg" alt="Profile">
+                <h3>Franchesca</h3>
+                <p>Calm & Composed</p>
+            </div>
+
+            <!-- Suggested Users -->
+            <div class="suggestions">
+                <h4>Suggested for You</h4>
+
+                <div class="suggestion">
+                    <img src="https://images.pexels.com/photos/8769487/pexels-photo-8769487.jpeg" alt="">
+                    <div>
+                        <strong>Rohan</strong>
+                        <p>@rohan</p>
+                    </div>
+                    <button>Follow</button>
+                </div>
+
+                <div class="suggestion">
+                    <img src="https://images.pexels.com/photos/25945132/pexels-photo-25945132.jpeg" alt="">
+                    <div>
+                        <strong>Kenn</strong>
+                        <p>@ken</p>
+                    </div>
+                    <button>Follow</button>
+                </div>
+
+                <div class="suggestion">
+                    <img src="https://images.pexels.com/photos/34754257/pexels-photo-34754257.jpeg" alt="">
+                    <div>
+                        <strong>Aryan</strong>
+                        <p>@aryan</p>
+                    </div>
+                    <button>Follow</button>
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- modal -->
+    <div class="modal" id="postModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <!-- INFO POPUP -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
