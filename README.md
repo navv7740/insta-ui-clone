@@ -1,4 +1,4 @@
-# Social Dashboard
+# INSTAGRAM UI CLONE
 
 A front-end social media dashboard UI built with plain HTML, CSS, and JavaScript. Inspired by Instagram's feed layout.
 
