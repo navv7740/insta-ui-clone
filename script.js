@@ -113,3 +113,20 @@ document.getElementById("home-btn").onclick = () => {
 document.getElementById("explore-btn").onclick = () => {
     document.querySelector(".feed").scrollIntoView({ behavior: "smooth" });
 };
+// SEARCH FEATURE
+const searchInput = document.getElementById("searchInput");
+const posts = document.querySelectorAll(".post-card");
+
+searchInput.addEventListener("keyup", () => {
+    const value = searchInput.value.toLowerCase();
+
+    posts.forEach((post) => {
+        const username = post.querySelector(".post-header h4").innerText.toLowerCase();
+
+        if (username.includes(value)) {
+            post.style.display = "block";
+        } else {
+            post.style.display = "none";
+        }
+    });
+});
